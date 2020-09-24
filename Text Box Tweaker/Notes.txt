@@ -1,0 +1,60 @@
+
+Hi everyone
+
+ This is one nice module that I've made to assist Data Validation as the user types in the
+text box, but It cannot be trusted though as the user might trick the text box into not
+validating typed keys by not typing them!
+ if he paste whatever right in the text box. The _KeyPress event is not fired. You might
+want to get over this using some API function that disables popup menu for the text box
+so that user cannot paste anything into it.
+
+
+
+Sub Syntax & Usage
+------------------
+
+Private Sub Text1_KeyPress(KeyAscii as Integer)
+
+	Tweak txt (As TextBox), _
+	      KeyAscii (As Integer), _
+              Mode (As eTweakMode), _
+	      Optional iDecimalPlaces (As Integer = 2), _
+              Optional sBannedSet (As String), _
+	      Optional sAllowedSet (As String)
+
+End Sub
+
+
+
+txt:		text box to tweak
+
+KeyAscii:	the KeyAscii Passed by the _KeyPress Event
+
+Mode:		one of 14 modes supported
+
+iDecimalPlaces:	Number of Decimal Places desired (Default =2)
+
+sBannedSet:	a String Variable that contains characters that should be banned
+		use this with the [Normal] Mode to Prevent certain keys
+
+sAllowedKeys:	a String Variable that contains characters that should be allowed
+		use with any mode to Allow keys that are banned by that mode
+
+---------------------------------------------------------------------------------
+
+I hope you like my work and find it useful :)
+feel free to use & distribute but please credit me, thanx! ;)
+
+By: Waleed A. Aly
+
+--------------------------------------------------------------------------------
+
+Other Source Code by me:
+
++ Mouse Recorder v2.0 (Capturing Clicks & Making Scripts!)
+	.http://www.planetsourcecode.com/vb/scripts/showcode.asp?txtCodeId=36323&lngWId=1
+
++ Super Easy API Registry functions
+	.http://planet-source-code.com/vb/scripts/ShowCode.asp?txtCodeId=35316&lngWId=1
+
+--------------------------------------------------------------------------------
